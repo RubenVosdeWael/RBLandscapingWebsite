@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HomePage
+        </title>
+        <link href="css/gallery.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <span Class="Logo">
+            <a href="index.html"><img src="images/Logo_Janet.png" alt="Logo for my business" height="80" width="90"> </a><!--Logo-->
+            <h1>
+                RB Landscaping
+            </span>
+            <span Class="SearchBar">
+                
+                    <a href="index.html">Home</a>
+                    <a href="#Gallery">Gallery</a>
+                    <a href="#About">About</a>
+                    <a href="#Contact">Contact-Us</a>
+                
+            </span>
+            </h1>
+        
+
+        <hr />
+        </div><!--end of header-->
+        <div id="Gallery"><!--This is where my gallery section starts-->
+            <!-- Slideshow container -->
+            <!--Slideshow Gallery done with code from https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="images/Back_Yard_Left(Before).jpg" style="width:100%">
+      <div class="text">Before</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img src="images/Back_Yard_Middle(Before).jpg" style="width:100%">
+      <div class="text">Before</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="images/Back_Yard_Right(Before).jpg" style="width:100%">
+      <div class="text">Before</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src="images/Front_Yard_Left(Before).jpg" style="width:100%">
+        <div class="text">Before</div>
+      </div>
+
+     <div class="mySlides fade">
+      <div class="numbertext">5 / 7</div>
+      <img src="images/Front_Yard_Right(Before).jpg" style="width:100%">
+      <div class="text">Before</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src="images/Bush_Section_Left_Angle.jpg" style="width:100%">
+        <div class="text">After</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <img src="images/Tree's_Section_Mulch.jpg" style="width:100%">
+        <div class="text">After</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    
+    <!--The javaScript code for my gallery-->
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+  </div><p>Here are examples of previous work done by RB Landscaping.</p>
+        </div><!--This is where my gallery section ends-->
+
+        <div id="About"><!--This is where my about section starts-->
+            <p>At RB Landscaping, our story begins with a passion for transforming outdoor spaces into captivating havens 
+              of natural beauty. What sets us apart is not just our expertise in landscaping, but the unwavering dedication 
+              and hard work that brought our company to life.
+              <br />
+              <br />
+              Founded by a university student with a dream and determination, RB Landscaping was born from a vision to make 
+              the world a more picturesque and vibrant place. What started as a personal hobby quickly evolved into a 
+              full-fledged endeavor fueled by a genuine love for the environment and the desire to create artistry from 
+              nature.
+              <br />
+              <br />
+              Our founder's journey is a testament to the power of hard work and unwavering dedication. Balancing the 
+              demands of academia with the rigors of entrepreneurship, they poured countless hours into honing their skills, 
+              studying design principles, and mastering the art of harmonizing natural elements. Through sheer commitment 
+              and a willingness to go the extra mile, our founder transformed their vision into reality.
+              <br />
+              <br />
+              At RB Landscaping, every project is a canvas through which we paint landscapes that tell stories. Our team's 
+              dedication to excellence and innovation is evident in every meticulously chosen plant, every thoughtfully 
+              laid stone, and every harmonious arrangement. We believe that a well-designed landscape is a living testament to
+                the passion and hard work that go into its creation.
+                <br />
+                <br />
+              We take pride not only in the quality of our work but in the journey that brought us here. From the 
+              challenges faced as a university student entrepreneur to the late nights spent refining our craft, 
+              every obstacle was an opportunity for growth, and every milestone a testament to our dedication.
+              <br />
+              <br />
+              As we continue to build upon our foundation, we remain committed to delivering landscaping experiences
+               that exceed expectations. Whether it's a serene backyard retreat, an inviting commercial space, or a
+                sprawling public park, we infuse every project with the same dedication that defines our story.
+                <br />
+                <br />
+              Join us in our journey of turning dreams into reality, one landscape at a time. Experience the 
+              transformation that arises from hard work, dedication, and a love for nature. Welcome to RB Landscaping,
+               where your landscape becomes our canvas, and our passion becomes your paradise.</p>
+               <!--My meet the team section starts detailing all employees with an image attached-->
+               <h2 class="TeamTitle">
+                Meet the Team
+               </h2>
+               <!--Current Image for founder, its a placeholder so need to replace-->
+               <div class="teammember1">
+               <img src="images/Founder_Placeholder.jpg" width="100%" class="FounderImage">
+               <h3>Ruben Vos de Wael</h3>
+               <p>
+                Founder
+               </p>
+              </div>
+        </div><!--This is where my about section ends-->
+
+        <div id="Contact"><!--This is where my contact form begins-->
+            <form action="mailto:RBLandscaping74@gmail.com">
+            <p>If you would like to contact RB Landscaping then feel free to reach out. You can do this 
+                using the form below or send an email to RBLandscaping74@gmail.com
+            
+            <fieldset>
+                <legend>Your Contact Details</legend>
+                <label>
+                    Name: (required)<br />
+                    <input type="text" name="name" />
+                </label><br />
+                <label>
+                    Email:(required) <br />
+                    <input type="text" name="email" />
+                </label><br />
+                <label>
+                    Mobile: (optional)<br />
+                    <input type="text" name="mobile" />
+                </label><br />
+                <input type="submit" name="Sents" value="Send Email" />
+            </fieldset>
+        </p>
+        </form>
+        </div><!--This is where my contact form ends-->
+    </body>
+</html>
